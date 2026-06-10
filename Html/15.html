@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Fibonacci1</title>
+
+<script language = "JavaScript">
+var a=0, b=1, temp, i, limit;  
+limit=prompt("Enter how many fibonacci numbers you want to list:");  
+    document.write("f0: 0"+"<br>");
+    for(i=1; i < limit; i++)
+    {
+       temp = a + b;
+       a = b;
+       b = temp;
+       document.write("f"+i+": "+a+"<br>");
+    }              
+</script>
+
+</head>
+
+<body bgcolor="ffffff">
+</body>
+
+</html>

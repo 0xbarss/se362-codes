@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>PRIME1</title>
+<script language="JavaScript">
+var i, number, prime, limit;
+limit=prompt("Enter the upper limit to list the prime numbers:");
+for(number=2; number<=limit; number++)
+    {
+       prime = 1;
+       if(number%2==0 && number!=2)
+         prime = 0;
+       else if(number > 2)
+       {
+          for(i=3; i<number; i=i+2)
+          {
+             if(number%i==0) 
+             {
+                prime=0;
+                break;
+             }
+          }
+       }
+	   
+       if(prime)
+       {
+          document.write(number+'<br>');
+       }
+    }    
+</script>
+</head>
+<body bgcolor="ffffff">
+</body>
+</html>

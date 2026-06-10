@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Writing to a form</title>
+<script language = "JavaScript">
+
+function showPopup() {
+	var formContents = prompt("type your name", "");
+	document.thisform.thistext.value = formContents;
+}
+
+</script>
+</head>
+<body bgcolor= "ffffff" >
+<form name= "thisform" >
+	<input type= "text" name= "thistext" value="">
+	<input type="button" value= "click" onClick= "showPopup()">
+</form>
+</body>
+</html>

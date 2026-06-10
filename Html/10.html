@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Reading from a form</title>
+
+<script language = "JavaScript" >
+function showPopup() {
+	var formContents = document.thisform.thistext.value;
+	alert (formContents);
+}
+</script>
+
+</head>
+
+<body bgcolor="ffffff">
+<form name= "thisform">
+	<input type= "text" name= "thistext" value="">
+	<input type= "button" value= "click" onClick= "showPopup()" >
+</form>
+</body>
+
+</html>

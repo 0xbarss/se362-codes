@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>An Image Rollover</title>
+<script language = "JavaScript">
+function mouseOnOff(whichimg) {
+	document.image1.src = whichimg;
+}
+</script>
+</head>
+<body bgcolor= "ffffff">
+<a href="#" onmouseover= "mouseOnOff('Kungfu2.jpg')" onmouseout= "mouseOnOff('Kungfu1.jpg')">
+	<img src= "Kungfu1.jpg" height=400 width=600 name= "image1">
+</a>
+</body>
+
+</html>

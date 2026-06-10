@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Fibonacci2</title>
+
+<script language = "JavaScript">
+var a=0, b=1, temp, u, v, i;  
+v=prompt("Enter lower limit:"); 
+u=prompt("Enter upper limit:");  
+    for(i=0; ; i++)
+    {
+        if (a>=v)
+		{
+		document.write("f"+i+": "+a+"<br>");
+		}	   
+	temp = a + b;
+	a = b;
+	b = temp;
+	if (a>u)
+	   {
+	   break;
+	   }
+    }                
+</script>
+
+</head>
+
+<body bgcolor="ffffff">
+</body>
+
+</html>

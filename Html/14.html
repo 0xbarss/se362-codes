@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function startTime() {
+    var today = new Date();
+	theFullYear = today.getFullYear(); 
+	theMonth = today.getMonth();
+	var m_names = new Array("Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık");
+	var d_names = new Array( "Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi");
+	theDate = today.getDate();
+	theDay = today.getDay();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML ="Time: " + d_names[theDay] + ", " + theDate + "/" + m_names[theMonth] + "/" + theFullYear + " " + h + ":" + m + ":" + s;
+    setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+}
+</script>
+</head>
+<body onload="startTime()">
+<div id="txt"></div>
+</body>
